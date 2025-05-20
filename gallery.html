@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Picverse</title>
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="company"><a>Picverse</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a class="submit-btn" href="submit.html">Submit Art</a>
+            <div class="user-icon">👤</div>
+        </div>
+    </nav>
+
+    <section class="header">
+        <div class="background-header"></div>
+        <div class="text-header">
+            <h1>Gallery</h1>
+        </div>
+    </section>
+
+    <div class="tags-frame">
+        <div class="tags-title">
+            <h4>Tags</h4>
+            <div class="tags-title-separator">
+                <div class="horizontal-line"></div>
+            </div>
+        </div>
+
+        <div class="tags-container">
+            <div class="toggle-tag" data-tag="Furries">
+                <p>Furries</p>
+            </div>
+            <div class="toggle-tag" data-tag="Painting">
+                <p>Painting</p>
+            </div>
+            <div class="toggle-tag" data-tag="Anime">
+                <p>Anime</p>
+            </div>
+        </div>
+
+
+
+    </div>
+    <div class="gallery-box">
+
+        <div class="gallery-placeholder">
+            <p>Please select a tag</p>
+        </div>
+
+
+        <div class="gallery-group" data-tag="Furries">
+            <div class="gallery-item">
+                <img src="assets/furry1.jpg" alt="Coyote nomming on sandwich" class="clickable-image" data-title="Nom"
+                    data-artist="unnecessaryfil1" data-date="2024-03-11"
+                    data-description="He wasn't fed for 10 seconds">
+                <div class="image-overlay">
+                    <h4>“Nom”</h4>
+                    <p class="artist">unnecessaryfil1</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/furry2.jpg" alt="Gnarpy" class="clickable-image" data-title="Gnarpy"
+                    data-artist="Gnarpy" data-date="2024-04-09" data-description="Gnarpy">
+                <div class="image-overlay">
+                    <h4>“Gnarpy”</h4>
+                    <p class="artist">Gnarpy</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/furry3.jpg" alt="Coyote/Fox strolling through the streets" class="clickable-image"
+                    data-title="A daylight stroll" data-artist="Hemu" data-date="2025-01-11"
+                    data-description="Skating + daytime = mood. It's nice when the wind blows into you, especially when it's cold">
+                <div class="image-overlay">
+                    <h4>“A daylight stroll”</h4>
+                    <p class="artist">Hemu</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/furry4.jpg" alt="Anthro dog visiting a garden with a calico" class="clickable-image"
+                    data-title="Welcome to the garden" data-artist="SyukKa" data-date="2023-09-19"
+                    data-description="Ah, so you'd like to learn how to take care of em?">
+                <div class="image-overlay">
+                    <h4>“Welcome to the garden”</h4>
+                    <p class="artist">SyukKa</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/furry5.jpg" alt="Fox with a japanese-inspired mask" class="clickable-image"
+                    data-title="Fox" data-artist="big_squid_man" data-date="2023-11-12" data-description="Fox">
+                <div class="image-overlay">
+                    <h4>“Fox”</h4>
+                    <p class="artist">big_squid_man</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="gallery-group" data-tag="Painting">
+            <div class="gallery-item">
+                <img src="assets/painting1.jpg" alt="Mountain landscape with sunlit peaks and pine forest"
+                    class="clickable-image" data-title="Breath of the Valley" data-artist="C.J. Turner"
+                    data-date="2024-04-02"
+                    data-description="It's one of those places you find on accident, but never forget. Just you, the wind, and the scent of pine.">
+                <div class="image-overlay">
+                    <h4>“Breath of the Valley”</h4>
+                    <p class="artist">C.J. Turner</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/painting2.jpg" alt="Chubby white cat sitting peacefully on the grass"
+                    class="clickable-image" data-title="Sunbathing Royalty" data-artist="Lily Stratton"
+                    data-date="2023-07-15" data-description="He does nothing. Stupid cat.">
+                <div class="image-overlay">
+                    <h4>“Sunbathing Royalty”</h4>
+                    <p class="artist">Lily Stratton</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/painting3.jpg" alt="Fish-eye close-up of a curious orange cat in a bathroom"
+                    class="clickable-image" data-title=":3" data-artist="Shatterjaw" data-date="2024-06-01"
+                    data-description="Huh?">
+                <div class="image-overlay">
+                    <h4>“Who’s In My Sink?”</h4>
+                    <p class="artist">Shatterjaw</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/painting4.jpg" alt="Golden retriever puppy in a ruffled renaissance collar by a sea"
+                    class="clickable-image" data-title="Sir Barksalot of Bayview" data-artist="Eve Dimas"
+                    data-date="2022-11-26"
+                    data-description="He guards the coast. He rules the realm. He just discovered jellyfish.">
+                <div class="image-overlay">
+                    <h4>“Sir Barksalot of Bayview”</h4>
+                    <p class="artist">Eve Dimas</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/painting5.jpg" alt="Elegant orange cat painted in loose impressionistic strokes"
+                    class="clickable-image" data-title="Soft Silence" data-artist="Maris Winfield"
+                    data-date="2024-03-09"
+                    data-description="It’s not sleeping. It’s thinking deeply about the universe. Probably.">
+                <div class="image-overlay">
+                    <h4>“Soft Silence”</h4>
+                    <p class="artist">Maris Winfield</p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-group" data-tag="Anime">
+            <div class="gallery-item">
+                <img src="assets/anime1.jpg" alt="Bald anime character grinning with intense lighting"
+                    class="clickable-image" data-title="Shiny" data-artist="Ackasa Mickerman" data-date="2015-09-11"
+                    data-description="Shaved his head lol">
+                <div class="image-overlay">
+                    <h4>“Shiny”</h4>
+                    <p class="artist">Ackasa Mickerman</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/anime2.jpg" alt="Human figure surrounded by oceanic alien-like creatures"
+                    class="clickable-image" data-title="“Human” in the middle of searbornes" data-artist="Namie"
+                    data-date="2023-11-04"
+                    data-description="In the sea of seabornes, you alone stood different than all, yet they accept you as one.">
+                <div class="image-overlay">
+                    <h4>“Human” in the middle of searbornes</h4>
+                    <p class="artist">Namie</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/anime3.jpg" alt="Excited anime girl staring at koi fish swimming below"
+                    class="clickable-image" data-title="Koi :O" data-artist="Meownyan_" data-date="2024-05-29"
+                    data-description="“So many fishes! … Can we eat them?”">
+                <div class="image-overlay">
+                    <h4>“Koi :O”</h4>
+                    <p class="artist">Meownyan_</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/anime4.jpg" alt="Stylized drawing of Exusiai alter smiling with a new outfit"
+                    class="clickable-image" data-title="Same smile, different style" data-artist="IIIILMidloz"
+                    data-date="2025-05-21"
+                    data-description="Saw exusiai alter and i had to draw her again. Her new form looks so cute and im so excited to read her story!">
+                <div class="image-overlay">
+                    <h4>“Same smile, different style”</h4>
+                    <p class="artist">IIIILMidloz</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="assets/anime5.jpg" alt="Anime girl with innocent smile and blood-stained hands"
+                    class="clickable-image" data-title="Guilty Innocence" data-artist="Naytrix" data-date="2024-11-11"
+                    data-description="Murder behind those eyes">
+                <div class="image-overlay">
+                    <h4>“Guilty Innocence”</h4>
+                    <p class="artist">Naytrix</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal-text">
+            <p>Click anywhere to close!</p>
+        </div>
+        <div class="modal-content">
+            <span class="close">
+                &times;
+            </span>
+            <div class="modal-body">
+                <div class="modal-left">
+                    <img id="modal-image" src="" alt="">
+                </div>
+                <div class="modal-right">
+                    <h2 id="modal-title">TITLE</h2>
+                    <div class="modal-right-meta">
+                        <p>By: <span id="modal-artist">Artist Name</span></p>
+                        <p>Date Published: <span id="modal-date">00/00/0000</span></p>
+                    </div>
+                    <div class="modal-right-meta-description">
+                        <p id="modal-description">“Placeholder description”</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer">
+        <div class="footer-text">
+            <p>Lorem ipsum </p>
+        </div>
+    </div>
+
+
+
+
+    <script src="gallery.js" defer></script>
+
+</body>
+
+</html>

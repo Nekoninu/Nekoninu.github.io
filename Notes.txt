@@ -1,0 +1,33 @@
+02/May -
+    -Fixed trending tags
+    -Added functional hero section
+    
+    Note : 
+        -Properly stylize everything. Some script still calls their
+        attribute independently
+        -Maybe make a component for button so it's consistent
+        -Import image for arrow
+
+07/May - 
+    -Added hover on button
+    -Button should be consistent aand each use of the button haas an independent setting
+    -Added featured art section with auto scroll
+
+    Notes : 
+        -Properly stylize everything. Some script still calls their
+        attribute independently
+        -Import image for arrow
+        -Study JS, clear gpt's msg
+        -Add featured art title
+        -Aadd background for herosection
+
+21/May -
+    -Finished gallery
+    -Fixed some inconsistencies in index.html
+    -Add community.html and a bit of consistent
+
+    Notes : 
+        -Add arrow button
+        -Clear inconsistencies
+        -Add line component
+        -Finish everything by tomorrow!

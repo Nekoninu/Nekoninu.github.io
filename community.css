@@ -1,0 +1,181 @@
+.header {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    padding-left: 38px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+body {
+    background-color: var(--background);
+}
+
+.background-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Assets/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+
+.text-header {
+    position: relative;
+    z-index: 2;
+    font-family: var(--font-heading);
+    font-size: var(--h2);
+}
+
+.Community-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 150px 0px;
+    gap: 20px;
+}
+
+.Active-post-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.Active-members-container {
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+.Active-members-text h4 {
+    font-size: var(--h4);
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.Active-forum {
+    background-color: var(--background-50);
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Active-forum-upper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--body2);
+}
+
+.Active-forum-upper .line {
+    width: 3px;
+    height: 15px;
+    background: var(--primary);
+    border-radius: 10px;
+}
+
+.Active-forum-below {
+    font-size: var(--body2);
+    color: var(--text);
+    margin-top: 10px;
+    padding-top: 5px;
+    border-top: 1px solid var(--primary);
+}
+
+/* === ACTIVITIES SECTION === */
+.Activities-container {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.Recent-activites-container,
+.Active-user-container {
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    padding: 20px;
+    color: var(--text);
+    font-family: var(--font-body);
+}
+
+.Recent-activities-title h4,
+.Active-user-title h4 {
+    font-size: var(--h4);
+    font-family: var(--font-heading);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Recent-activities-button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.recent-activities-button {
+    background: var(--background);
+    color: var(--text);
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.recent-activities-button.active {
+    background: var(--primary);
+    color: var(--text);
+}
+
+.recent-activities {
+    max-height: 200px;
+    overflow-y: auto;
+    padding-right: 5px;
+}
+
+.activity-entry body {
+    display: block;
+    margin-bottom: 10px;
+    font-size: var(--body2);
+}
+
+/* === ACTIVE USERS SECTION === */
+.Active-user-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Activer-user-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.Active-user {
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: var(--body2);
+    color: var(--text);
+}

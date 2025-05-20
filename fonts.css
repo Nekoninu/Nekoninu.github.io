@@ -1,0 +1,66 @@
+:root {
+    --background: #090824;
+    --background-50: rgba(0, 0, 0, 0.5);
+    --section-background: #1E1552;
+    --primary: #F33561;
+    --secondary: #6B1D22;
+    --tertiary: #8C88DD;
+    --text: #F4F4FF;
+
+    /* Fonts */
+    --font-heading: 'Bebas Neue', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+    --h1: 72px;
+    --h2: 48px;
+    --subheading: 48px;
+    --subheading2: 36px;
+    --bold: 24px;
+    --body: 24px;
+    --body2: 18px;
+}
+
+a,
+p,
+h1,
+h2,
+h3,
+h4 {
+    color: var(--text);
+}
+
+
+p {
+    font-family: var(--font-body);
+    font-size: var(--body2);
+}
+
+a {
+    font-family: var(--font-body);
+    font-size: var(--body);
+}
+
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: var(--h1);
+    margin: 0;
+
+}
+
+h2 {
+    font-family: var(--font-heading);
+    font-size: var(--h2);
+    margin: 0;
+}
+
+h3 {
+    font-family: var(--font-heading);
+    font-size: var(--subheading);
+    margin: 0;
+}
+
+h4 {
+    font-family: var(--font-heading);
+    font-size: var(--subheading2);
+    margin: 0;
+}

@@ -1,0 +1,140 @@
+/* Navbar */
+body,
+h1,
+h2 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    padding: 10px 40px;
+    top: 0px;
+    z-index: 100;
+
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 48px;
+    margin: 0;
+    padding: 0 0 0 100px;
+}
+
+.nav-links a {
+    color: var(--text);
+    text-decoration: none;
+    padding: 8px 5px;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: var(--primary);
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.submit-btn {
+    background-color: var(--primary);
+    border-radius: 25px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+.user-icon {
+    font-size: 20px;
+    color: var(--text);
+}
+
+.company {
+    color: var(--text);
+
+
+}
+
+/*Button*/
+.button {
+    background-color: var(--primary);
+    color: var(--text);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+}
+
+/*Tag*/
+.tag {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: 0px 40px;
+    color: var(--text);
+    background-color: var(--section-background);
+    transition: background-color 0.3s;
+}
+
+.tag:hover {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.toggle-tag {
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    padding: 0px 40px;
+    color: var(--text);
+    background-color: var(--section-background);
+    cursor: pointer;
+}
+
+.toggle-tag.active {
+    background-color: var(--primary);
+    color: white;
+
+    transition: all 0.2s ease;
+}
+
+
+
+
+/*footer*/
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-background);
+    padding: 10px 40px;
+    height: 100%;
+    bottom: 0px;
+}
+
+.footer-text {
+    width: 100%;
+    text-align: center;
+}
