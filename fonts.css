@@ -4,19 +4,16 @@
     --section-background: #1E1552;
     --primary: #F33561;
     --secondary: #6B1D22;
-    --tertiary: #8C88DD;
+    --tertiary: #784ba0;
     --text: #F4F4FF;
 
     /* Fonts */
     --font-heading: 'Bebas Neue', sans-serif;
     --font-body: 'Open Sans', sans-serif;
-    --h1: 72px;
+    --h1: 62px;
     --h2: 48px;
-    --subheading: 48px;
-    --subheading2: 36px;
-    --bold: 24px;
-    --body: 24px;
-    --body2: 18px;
+    --subheading: 36px;
+    --body: 16px;
 }
 
 a,
@@ -31,12 +28,13 @@ h4 {
 
 p {
     font-family: var(--font-body);
-    font-size: var(--body2);
+    font-size: var(--body);
 }
 
 a {
     font-family: var(--font-body);
     font-size: var(--body);
+    font-weight: bold;
 }
 
 
@@ -54,13 +52,26 @@ h2 {
 }
 
 h3 {
-    font-family: var(--font-heading);
+    font-family: var(--font-body);
     font-size: var(--subheading);
     margin: 0;
 }
 
-h4 {
-    font-family: var(--font-heading);
-    font-size: var(--subheading2);
+html,
+body {
+    background-color: var(--background);
+    height: 100%;
     margin: 0;
+}
+
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1;
+    padding-bottom: 70px;
 }

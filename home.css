@@ -1,12 +1,3 @@
-/* ======= MOBILE VERSION START ======= */
-@media screen and (max-width: 768px) {
-    /*.navbar-mobile {
-    To be filled later for mobile navbar design
-    }*/
-
-}
-
-
 .hero {
     position: relative;
     height: 400px;
@@ -34,6 +25,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    pointer-events: none;
 }
 
 .slide.active {
@@ -61,12 +53,13 @@
     transform: translateY(-50%);
     background-color: var(--primary);
     color: var(--text);
-    font-size: var(--body2);
+    font-size: var(--body);
+    font-weight: bold;
     padding: 20px 30px;
-
+    pointer-events: auto;
     border: none;
     border-radius: 100%;
-    z-index: 3;
+    z-index: 99;
     cursor: pointer;
 }
 
@@ -89,8 +82,12 @@
     padding: 30px 100px;
 }
 
-.hero-left h2 {
-    max-width: 400px;
+.hero-left h1 {
+    max-width: 500px;
+}
+
+.hero-left {
+    padding-left: 25px;
 }
 
 .hero-separator .vertical-line {
@@ -106,6 +103,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-right: 25px;
 }
 
 .hero-right h3,
@@ -118,14 +116,19 @@
 }
 
 .explore-btn {
-    background-color: var(--primary);
-    color: var(--text);
-    margin-top: 30px;
-    padding: 10px 25px;
-    cursor: pointer;
-    font-size: var(--body2);
+    padding: 10px 30px;
+    background: linear-gradient(to right, var(--primary), var(--tertiary));
     border: none;
     border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: var(--body);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
 }
 
 
@@ -186,6 +189,11 @@
 
 }
 
+.tag a {
+    display: flex;
+    padding: 20px 5px;
+}
+
 
 .featuredart {
     height: 600px;
@@ -200,16 +208,49 @@
     text-shadow: -5px 3px 0px var(--primary);
 }
 
+.featured-card {
+    width: 300px;
+    border: 2px solid var(--primary);
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--section-background);
+}
+
+.art-image {
+    width: 100%;
+    display: block;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.title-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.likes {
+    font-size: var(--body);
+    color: var(--primary);
+}
+
+.art-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 .art_box {
     display: flex;
     flex-direction: row;
     gap: 30px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    scrollbar-width: none;
-    /* Firefox */
-    -ms-overflow-style: none;
-    /* IE 10+ */
 }
 
 .art_box::-webkit-scrollbar {

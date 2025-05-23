@@ -31,3 +31,13 @@
         -Clear inconsistencies
         -Add line component
         -Finish everything by tomorrow!
+
+
+22/May - 
+    -Finished community
+    
+    Notes: 
+    -Add arrow button
+        -Clear inconsistencies
+        -Add components
+        -Finish everything by tomorrow!

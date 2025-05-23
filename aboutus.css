@@ -1,0 +1,126 @@
+.header {
+    position: relative;
+    height: 100px;
+    display: flex;
+    align-items: left;
+    justify-content: flex-start;
+    padding-left: 38px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.background-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/Assets/hero.jpg');
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+
+html,
+body {
+    background-color: var(--background);
+    height: 100%;
+    margin: 0;
+}
+
+.text-header {
+    position: relative;
+    z-index: 2;
+    font-family: var(--font-heading);
+    font-size: var(--h2);
+}
+
+.Vision-Mission-Container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 200px;
+
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid var(--primary);
+}
+
+.upper h2 {
+    text-shadow: -3px 3px 0px var(--primary);
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.lower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--section-background);
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+    min-width: 400px;
+}
+
+.KeyFeature-title h2 {
+    font-family: var(--font-heading);
+    font-size: var(--h2);
+    text-shadow: -3px 3px 0px var(--primary);
+    color: var(--text);
+    padding: 30px 40px;
+}
+
+.KeyFeature-Container {
+    background-color: var(--section-background);
+    border-radius: 10px;
+    padding: 60px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.KeyFeature-Upper,
+.KeyFeature-Lower {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.KeyFeature {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.Logo {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary);
+    border-radius: 10px;
+}
+
+.Key-Textbox {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.Key h3 {
+    text-shadow: -1px 2px 0px var(--primary);
+    margin: 0;
+}
+
+.Description p {
+    max-width: 500px;
+    color: var(--text);
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+}

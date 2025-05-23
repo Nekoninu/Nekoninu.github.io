@@ -56,11 +56,23 @@ h2 {
 }
 
 .submit-btn {
-    background-color: var(--primary);
-    border-radius: 25px;
+    border-radius: 20px;
     padding: 10px 25px;
-    text-decoration: none;
+    margin-top: 0px;
+
+    padding: 12px;
+    background: linear-gradient(to right, var(--primary), var(--tertiary));
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
     color: var(--text);
+    font-family: var(--font-body);
+    font-size: var(--body);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+
 }
 
 .user-icon {
@@ -75,17 +87,24 @@ h2 {
 }
 
 /*Button*/
-.button {
-    background-color: var(--primary);
-    color: var(--text);
-    padding: 10px 25px;
+
+button {
+    padding: 12px;
+    background: linear-gradient(to right, var(--primary), var(--tertiary));
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: var(--body);
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.button:hover {
+button:hover {
     background-color: var(--secondary);
 }
 
@@ -129,12 +148,31 @@ h2 {
     justify-content: space-between;
     align-items: center;
     background-color: var(--section-background);
-    padding: 10px 40px;
-    height: 100%;
+    padding: 20px 10px;
+    height: auto;
     bottom: 0px;
 }
 
 .footer-text {
     width: 100%;
     text-align: center;
+}
+
+/*line*/
+.line {
+    background-color: var(--primary);
+}
+
+/* ======= MOBILE VERSION START ======= */
+@media screen and (max-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: red;
+        padding: 5px 20px;
+        height: 100%;
+        bottom: 0px;
+
+    }
 }

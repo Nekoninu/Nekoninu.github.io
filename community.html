@@ -19,7 +19,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="gallery.html">Gallery</a></li>
-            <li><a class="active" href="community.html">Community</a></li>
+            <li><a href="community.html">Community</a></li>
             <li><a href="aboutus.html">About us</a></li>
         </ul>
         <div class="nav-actions">
@@ -28,94 +28,240 @@
         </div>
     </nav>
 
-    <section class="header">
-        <div class="background-header"></div>
-        <div class="text-header">
-            <h1>Community</h1>
-        </div>
-    </section>
-
-    <div class="Community-container">
-        <div class="Active-post-container">
-            <div class="Active-members-container">
-                <div class="Active-members-text">
-                    <h3>Active forums</h3>
+    <div class="wrapper">
+        <div class="main">
+            <section class="header">
+                <div class="background-header"></div>
+                <div class="text-header">
+                    <h1>Community</h1>
                 </div>
-                <div class="Active-forum">
-                    <div class="Active-forum-upper">
-                        <p>User_name</p>
-                        <div class="line">
+            </section>
+
+            <div class="Community-container">
+
+                <div class="Recent-activites-container">
+                    <div class="Active-container">
+                        <div class="Recent-activities-title">
+                            <div class="Activity active">
+                                <h2>Recent forums</h2>
+                                <div class="line active"></div>
+                            </div>
+                            <div class="Activity">
+                                <h2>Recent followers</h2>
+                                <div class="line active"></div>
+                            </div>
+                            <div class="Activity">
+                                <h2>Recent comments</h2>
+                                <div class="line active"></div>
+                            </div>
+
                         </div>
-                        <p>00 mins. ago</p>
-                        <!--Image logo-->
-                        <p>00</p>
-                    </div>
-                    <div class="Active-forum-below">
 
-                        <body>Forum title</body>
-                        <div class="line"></div>
+                        <div class="Recent-activities-button-container">
+                            <button data-target="forums">💬</button>
+                            <button data-target="followers">👥</button>
+                            <button data-target="comments">💭</button>
+                        </div>
+
+
+                        <div id="forums" class="recent-activities active">
+                            <div class="activity-entry">
+                                <div class="recent-entry">
+                                    <p>"UX Design Trends 2025"</p>
+                                </div>
+                                <div class="recent-entry">
+                                    <p>"Best Tools for Data Visualization"</p>
+                                </div>
+                                <div class=" recent-entry">
+                                    <p>"Tailwind vs Bootstrap: What’s Better in 2025?"</p>
+                                </div>
+                                <div class="recent-entry">
+                                    <p>"Accessibility Tips for Modern Web Apps"</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="followers" class="recent-activities">
+                            <div class="recent-entry">
+                                <p>DevNerd is now following you!</p>
+                            </div>
+                            <div class="recent-entry">
+                                <p>DesignQueen is now following you!</p>
+                            </div>
+                            <div class=" recent-entry">
+                                <p>CodeCrush is now following you!</p>
+                            </div>
+                            <div class="recent-entry">
+                                <p>UIHunter is now following your account!</p>
+                            </div>
+                        </div>
+                        <div id="comments" class="recent-activities">
+                            <div class="recent-entry">
+                                <p>PixelPete commented: "Great insights on UI consistency!"</p>
+                            </div>
+                            <div class="recent-entry">
+                                <p>LogicLiz replied: "I love your breakdown of onboarding flows."</p>
+                            </div>
+                            <div class=" recent-entry">
+                                <p>ReactRick commented: "Very helpful, thanks for sharing!"</p>
+                            </div>
+                            <div class="recent-entry">
+                                <p>SketchSavvy said: "Couldn’t agree more with your UX points."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Active-post-container">
+                    <div class="Active-members-container">
+                        <div class="Active-members-text">
+                            <h2>Active forums</h>
+                        </div>
+                        <div class="Active-forum-container">
+                            <div class="Active-forum">
+                                <div class="Active-forum-upper">
+                                    <p>User_name</p>
+                                    <div class="line forum-upper">
+                                    </div>
+                                    <p>00 mins. ago</p>
+                                    <!--Image logo-->
+                                    <p>00</p>
+                                </div>
+
+                                <div class="Active-forum-below">
+                                    <div class="Active-forum-below-title">
+                                        <h3>Forum title</h3>
+                                    </div>
+
+                                    <div class="line forum-below"></div>
+                                </div>
+                            </div>
+                            <div class="Active-forum">
+                                <div class="Active-forum-upper">
+                                    <p>User_name</p>
+                                    <div class="line forum-upper">
+                                    </div>
+                                    <p>00 mins. ago</p>
+                                    <!--Image logo-->
+                                    <p>00</p>
+                                </div>
+
+                                <div class="Active-forum-below">
+                                    <div class="Active-forum-below-title">
+                                        <h3>Forum title</h3>
+                                    </div>
+
+                                    <div class="line forum-below"></div>
+                                </div>
+                            </div>
+                            <div class="Active-forum">
+                                <div class="Active-forum-upper">
+                                    <p>User_name</p>
+                                    <div class="line forum-upper">
+                                    </div>
+                                    <p>00 mins. ago</p>
+                                    <!--Image logo-->
+                                    <p>00</p>
+                                </div>
+
+                                <div class="Active-forum-below">
+                                    <div class="Active-forum-below-title">
+                                        <h3>Forum title</h3>
+                                    </div>
+
+                                    <div class="line forum-below"></div>
+                                </div>
+                            </div>
+                            <div class="Active-forum">
+                                <div class="Active-forum-upper">
+                                    <p>User_name</p>
+                                    <div class="line forum-upper">
+                                    </div>
+                                    <p>00 mins. ago</p>
+                                    <!--Image logo-->
+                                    <p>00</p>
+                                </div>
+
+                                <div class="Active-forum-below">
+                                    <div class="Active-forum-below-title">
+                                        <h3>Forum title</h3>
+                                    </div>
+
+                                    <div class="line forum-below"></div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <div class="Active-container">
+                    <div class="Active-user-title">
+                        <h2>Active Users</h2>
+                        <div class="line active"></div>
+                    </div>
+                    <div class="Active-user-box">
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+                        <div class="Active-user">
+                            <img src="path/to/avatar1.png" class="user-avatar" />
+                            <p>HatsuneMiku_Overwatch#2003</p>
+                        </div>
+
+
                     </div>
                 </div>
             </div>
         </div>
-        <div class="Activities-container">
-            <div class="Recent-activites-container">
-                <div class="Recent-activities-title">
-                    <h4>Recent ...</h4>
-                    <!-- based off the clicked buttons,- [ ]  New forum created- [ ]  New follower- [ ]  New comments -->
-                </div>
-                <div class="Recent-activities-button-container">
-                    <button class="recent-activities-button active" data-target="forums">💬</button>
-                    <button class="recent-activities-button" data-target="followers">👥</button>
-                    <button class="recent-activities-button" data-target="comments">💭</button>
-                </div>
-                <div class="recent-activities" id="forums">
-                    <div class="activity-entry">
 
-                        <p>What`s your favorite brush?</p>
-                        <p>What`s your favorite brush?</p>
-                        <p>What`s your favorite brush?</p>
-                        <p>What`s your favorite brush?</p>
-
-                    </div>
-                </div>
-                <div class="recent-activities hidden" id="followers">
-                    <div class="activity-entry">
-
-                        <p>Hatsunemiku#1000</p>
-                        <p>Hatsunemiku#1000</p>
-                        <p>Hatsunemiku#1000</p>
-                        <p>Hatsunemiku#1000</p>
-
-                    </div>
-                </div>
-                <div class="recent-activities hidden" id="comments">
-                    <div class="activity-entry">
-
-                        <p>User commented...</p>
-                        <p>User commented...</p>
-                        <p>User commented...</p>
-                        <p>User commented...</p>
-
-                    </div>
-                </div>
-            </div>
-            <div class="Active-user-container">
-                <div class="Active-user-title">
-                    <h4>Active Now</h4>
-                </div>
-                <div class="Active-user-group">
-                    <div class="Active-user"><!--Has profile picture, name, and then tagline!--></div>
-                    <div class="Active-user"><!--Has profile picture, name, and then tagline!--></div>
-                    <div class="Active-user"><!--Has profile picture, name, and then tagline!--></div>
-                    <div class="Active-user"><!--Has profile picture, name, and then tagline!--></div>
-                    <div class="Active-user"><!--Has profile picture, name, and then tagline!--></div>
-
-                </div>
-
+        <div class="footer">
+            <div class="footer-text">
+                <p>Lorem ipsum </p>
             </div>
         </div>
+
     </div>
+    </div>
+
+
+
+
+    <script src="community.js" defer></script>
 </body>
 
 </html>

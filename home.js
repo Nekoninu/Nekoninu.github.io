@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
             scrollAmount >= artBox.scrollWidth - artBox.clientWidth ||
             scrollAmount <= 0
         ) {
-            direction *= -4; // reverse direction
+            direction *= -1;
         }
 
         artBox.scrollTo({

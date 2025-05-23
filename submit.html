@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Picverse</title>
+    <link rel="stylesheet" href="submit.css">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="component.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="company"><a>Picverse</a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div class="nav-actions">
+            <a class="submit-btn" href="submit.html">Submit Art</a>
+            <div class="user-icon">👤</div>
+        </div>
+    </nav>
+
+    <div class="background-header"></div>
+
+    <div class="submit-form-wrapper">
+        <form id="submissionForm" class="submit-form">
+            <p>Submit your art, Show your creation!</p>
+            <div class="line separator"></div>
+
+            <div class="form">
+                <div class="form-top">
+                    <div class="form-top-left">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" maxlength="50">
+
+                        <label for="description">Description</label>
+                        <textarea id="description" maxlength="300"></textarea>
+                    </div>
+
+                    <div class="form-top-right">
+                        <img id="preview" src="/Assets/example.jpg" alt="Preview" class="preview" />
+
+                        <div class="submit-button">
+                            <label for="fileUpload" class="upload-btn">Upload</label>
+                            <input type="file" id="fileUpload" accept=".png,.jpg,.jpeg,.gif,.webp" hidden>
+                        </div>
+                        <p>Max. Size : 10mb, Format: .png, .jpeg, .webp, .gif</p>
+                    </div>
+
+                </div>
+                <div class="form-bottom">
+
+                    <label>Tags</label>
+                    <div class="tags">
+                        <div class="tags">
+                            <div class="tag art" data-tag="Furries">Furries</div>
+                            <div class="tag art" data-tag="Anime">Anime</div>
+                            <div class="tag art" data-tag="Painting">ABBAA</div>
+                        </div>
+                    </div>
+
+                    <label>Is this artwork made from AI?</label>
+                    <div class="ai-check">
+                        <label><input type="radio" name="ai" value="yes"> Yes</label>
+                        <label><input type="radio" name="ai" value="no"> No</label>
+                    </div>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+                <div id="errorMsg" class="error"></div>
+                <button type="submit">Publish</button>
+            </div>
+
+
+        </form>
+    </div>
+
+    <script src="submit.js"></script>
+
+</body>
+
+</html>
